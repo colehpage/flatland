@@ -1,4 +1,4 @@
-# CHP New Tab Page (Work In Progress)
+# Flatland
 
 A modified version of [Cade Scroggins](https://github.com/cadejscroggins)'s homepage [Tilde](https://github.com/cadejscroggins/tilde). Renamed Flatland in homage to the slang term used in Neal Stephenson's book Snowcrash as well as Edwin Abbott Abbott's book of that name, both favorites of mine.
 
@@ -48,8 +48,8 @@ For example:
 If you enter in a full domain or URL, you will be redirected to said domain or
 URL. For example:
 
-- Entering `stallman.org` would redirect you to
-  [stallman.org](https://stallman.org/).
+- Entering `reddit.com` would redirect you to
+  [reddit.com](https://reddit.com/).
 - Entering `keep.google.com` would redirect you to
   [keep.google.com](https://keep.google.com/).
 
