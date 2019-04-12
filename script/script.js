@@ -1,6 +1,6 @@
 const CONFIG = {
   /**
-   * The category, name, key, url, search path, color, icon, and quicklaunch properties for your commands.
+   * The category, name, key, longkey, url, search path, color, icon, and quicklaunch properties for your commands.
    * Icons must be added to "icons" folder and their values/names must be updated.
    * If none of the specified keys are matched, the '*' key is used.
    * Commands without a category don't show up in the help menu.
@@ -10,6 +10,7 @@ const CONFIG = {
     {
       name: 'Google',
       key: '*',
+      longkey: 'google',
       url: 'https://encrypted.google.com',
       search: '/search?q={}',
       color: '#fff',
@@ -18,6 +19,7 @@ const CONFIG = {
       category: 'Work',
       name: 'Mail',
       key: 'm',
+      longkey: 'mail',
       url: 'https://gmail.com',
       search: '/#search/{}',
       color: 'linear-gradient(to bottom right, #D44638, #D44638 5%, #B23121 5%, #B23121 10%, #EEEEEE 10%, #EEEEEE 15%, #E2E2E2 15%)',
@@ -28,6 +30,7 @@ const CONFIG = {
       category: 'Work',
       name: 'Drive',
       key: 'd',
+      longkey: 'drive',
       url: 'https://drive.google.com',
       search: '/drive/search?q={}',
       color: 'linear-gradient(to bottom right, #4285F4, #4285F4 5%, #DB4437 5%, #DB4437 10%, #F4B400 10%, #F4B400 15%, #0F9D58 15%)',
@@ -38,6 +41,7 @@ const CONFIG = {
       category: 'Info',
       name: 'LinkedIn',
       key: 'l',
+      longkey: 'linkedin',
       url: 'https://linkedin.com',
       search: '/search/results/all/?keywords={}',
       color: 'linear-gradient(to bottom right, #0077b5, #0077b5 5%, #273e4a 5%, #273e4a 10%, #f5f5f5 10%, #f5f5f5 15%, #fff 15%)',
@@ -48,6 +52,7 @@ const CONFIG = {
       category: 'Info',
       name: 'Facebook',
       key: 'f',
+      longkey: 'facebook',
       url: 'https://www.facebook.com',
       search: '/search/top/?q={}',
       color: 'linear-gradient(to bottom right, #263a62, #263a62 5%, #2e4474 5%, #2e4474 10%, #fff 10%, #fff 15%, #3C5A99 15%)',
@@ -58,44 +63,49 @@ const CONFIG = {
       category: 'Info',
       name: 'ESPN',
       key: 'e',
+      longkey: 'espn',
       url: 'http://www.espn.com',
       search: '/search/results?q={}',
       color: 'linear-gradient(to bottom right, #DD0000, #DD0000 5%, #B40000 5%, #B40000 10%, #2A2B2C 10%, #2A2B2C 15%, #FFF 15%)',
-      icon: '',
+      icon: 'espn',
       quickLaunch: true,
     },
     {
       category: 'Work',
       name: 'Notion',
       key: 'no',
+      longkey: 'notion',
       url: 'https://www.notion.so',
       color: 'linear-gradient(to bottom right, #000, #000 5%, #706d6d 5%, #706d6d 10%, #a3a3a3 10%, #a3a3a3 15%, #fff 15%)',
-      icon: '',
+      icon: 'notion',
       quickLaunch: true,
     },
     {
       category: 'Work',
       name: 'Slack',
       key: 'sl',
+      longkey: 'slack',
       url: 'https://sigmaratings.slack.com',
       color: 'linear-gradient(to bottom right, #36C5F0, #36C5F0 5%, #ECB22E 5%, #ECB22E 10%, #2EB67D 10%, #2EB67D 15%, #E01E5A 15%)',
       search: '/messages/CBDRDGWEL/{}',
-      icon: '',
+      icon: 'slack',
       quickLaunch: true,
     },
     {
       category: 'Work',
       name: 'Calendar',
       key: 'c',
+      longkey: 'calendar',
       url: 'https://calendar.google.com/calendar',
       color: 'linear-gradient(to bottom right, #fff, #fff 5%, #C5C5C5 5%, #C5C5C5 10%, #3765D0 10%, #3765D0 15%, #4688F4 15%)',
-      icon: '',
+      icon: 'calendar',
       quickLaunch: true,
     },
     {
       category: 'Work',
       name: 'GitHub',
       key: 'g',
+      longkey: 'github',
       url: 'https://github.com',
       search: '/search?q={}',
       color: 'linear-gradient(to bottom right, #201F1F, #201F1F 5%, #AC5C51 5%, #AC5C51 10%, #F4CAB1 10%, #F4CAB1 15%, #9CDAF0 15%)',
@@ -106,6 +116,7 @@ const CONFIG = {
       category: 'Work',
       name: 'StackOverflow',
       key: 'so',
+      longkey: 'stackoverflow',
       url: 'https://stackoverflow.com',
       search: '/search?q={}',
       color: 'linear-gradient(to bottom right, #222426, #222426 5%, #bcbbbb 5%, #bcbbbb 10%, #f48024 10%, #f48024 15%, #fff 15%)',
@@ -116,6 +127,7 @@ const CONFIG = {
       category: 'Work',
       name: 'AWS',
       key: 'aws',
+      longkey: 'aws',
       url: 'https://console.aws.amazon.com/',
       search: '/search/?ie=UTF-8&q={}',
       color: 'linear-gradient(to bottom right, #232f3e, #232f3e 5%, #007eb9 5%, #007eb9 10%, #e47911 10%, #e47911 15%, #fff 15%)',
@@ -126,6 +138,7 @@ const CONFIG = {
       category: 'Media',
       name: 'YouTube',
       key: 'y',
+      longkey: 'youtube',
       url: 'https://youtube.com',
       search: '/results?search_query={}',
       color: 'linear-gradient(to bottom right, #282828, #282828 5%, #ff0000 5%, #ff0000 10%, #f5f5f5 10%, #f5f5f5 15%, #fff 15%)',
@@ -136,6 +149,7 @@ const CONFIG = {
       category: 'Media',
       name: 'Netflix',
       key: 'n',
+      longkey: 'netflix',
       url: 'https://www.netflix.com',
       color: 'linear-gradient(to bottom right, #000, #000 5%, #282828 5%, #282828 10%, #fff 10%, #fff 15%, #ff0000 15%)',
       icon: 'netflix',
@@ -145,6 +159,7 @@ const CONFIG = {
       category: 'Media',
       name: 'Twitch',
       key: 't',
+      longkey: 'twitch',
       url: 'https://www.twitch.tv',
       search: '/directory/game/{}',
       color: 'linear-gradient(to bottom right, #3a2862, #3a2862 5%, #483078 5%, #483078 10%, #faf9fa 10%, #faf9fa 15%, #6440a4 15%)',
@@ -155,6 +170,7 @@ const CONFIG = {
       category: 'Info',
       name: 'Reddit',
       key: 'r',
+      longkey: 'reddit',
       url: 'https://reddit.com',
       search: '/search?q={}',
       color: 'linear-gradient(to bottom right, #ff4500, #ff4500 5%, #5f99cf 5%, #5f99cf 10%, #cee3f8 10%, #cee3f8 15%, #fff 15%)',
@@ -165,6 +181,7 @@ const CONFIG = {
       category: 'Info',
       name: 'Geekhack',
       key: 'h',
+      longkey: 'geekhack',
       url: 'https://geekhack.org',
       color: 'linear-gradient(to bottom right, #000, #000 5%, #151515 5%, #151515 10%, #222222 10%, #222222 15%, #E8492A 15%)',
       icon: 'geekhack',
@@ -174,6 +191,7 @@ const CONFIG = {
       category: 'Media',
       name: 'Vimeo',
       key: 'v',
+      longkey: 'vimeo',
       url: 'https://vimeo.com',
       search: '/search?q={}',
       color: 'linear-gradient(to bottom right, #15272D, #15272D 5%, #40545C 5%, #40545C 10%, #fff 10%, #fff 15%, #00ADEF 15%)',
@@ -184,6 +202,7 @@ const CONFIG = {
       category: 'Info',
       name: 'Wikipedia',
       key: 'w',
+      longkey: 'wikipedia',
       url: 'https://www.wikiwand.com',
       search: '/en/{}',
       color: 'linear-gradient(to bottom right, #636466, #636466 5%, #939598 5%, #939598 10%, #3366CC 10%, #3366CC 15%, #fff 15%)',
@@ -194,6 +213,7 @@ const CONFIG = {
       category: 'Other',
       name: 'Ebay',
       key: 'eb',
+      longkey: 'ebay',
       url: 'https://www.ebay.com',
       search: '/sch/i.html?_nkw={}',
       color: 'linear-gradient(to bottom right, #e53238, #e53238 5%, #0064d2 5%, #0064d2 10%, #f5af02 10%, #f5af02 15%, #86b817 15%)',
@@ -204,6 +224,7 @@ const CONFIG = {
       category: 'Other',
       name: 'Amazon',
       key: 'a',
+      longkey: 'amazon',
       url: 'https://www.amazon.com',
       search: '/s?k={}',
       color: 'linear-gradient(to bottom right, #1B252F, #1B252F 5%, #232F3F 5%, #232F3F 10%, #fff 10%, #fff 15%, #FF9900 15%)',
@@ -214,6 +235,7 @@ const CONFIG = {
       category: 'Media',
       name: 'Imgur',
       key: 'im',
+      longkey: 'imgur',
       url: 'https://imgur.com',
       search: '/search?q={}',
       color: 'linear-gradient(to bottom right, #141517, #141517 5%, #50545C 5%, #50545C 10%, #fff 10%, #fff 15%, #1AB76E 15%)',
@@ -224,6 +246,7 @@ const CONFIG = {
       category: 'Info',
       name: 'NewYorkTimes',
       key: 'nyt',
+      longkey: 'newyorktimes',
       url:'https://www.nytimes.com',
       search: '/search?query={}',
       color: 'linear-gradient(to bottom right, #000, #000 5%, #6288a5 5%, #6288a5 10%, #f7f7f7 10%, #f7f7f7 15%, #fff 15%)',
@@ -234,6 +257,7 @@ const CONFIG = {
       category: 'Info',
       name: 'Twitter',
       key: 'tw',
+      longkey: 'twitter',
       url: 'https://twitter.com',
       color: 'linear-gradient(to bottom right, #000, #000 5%, #f5f8fa 5%, #f5f8fa 10%, #fff 10%, #fff 15%, #1CA1F2 15%)',
       icon: 'twitter',
@@ -243,6 +267,7 @@ const CONFIG = {
       category: 'Media',
       name: 'Instagram',
       key: 'ig',
+      longkey: 'instagram',
       url: 'https://www.instagram.com',
       search: '/explore/tags/{}',
       color: 'linear-gradient(to bottom right, #405DE6, #405DE6 5%, #C13584 5%, #C13584 10%, #F56040 10%, #F56040 15%, #FFDC80 15%)',
@@ -253,15 +278,29 @@ const CONFIG = {
       category: 'Other',
       name: 'IMDb',
       key: 'i',
+      longkey: 'imdb',
       url: 'https://imdb.com',
       search: '/find?ref_=nv_sr_fn&q={}',
       color: 'linear-gradient(to bottom right, #181818, #181818 5%, #333333 5%, #333333 10%, #D2D1CD 10%, #D2D1CD 15%, #E8B706 15%)',
+      icon: 'imdb',
+      quickLaunch: true,
+    },
+    {
+      category: 'Other',
+      name: 'Massdrop',
+      key: 'md',
+      longkey: 'massdrop',
+      url: 'https://www.massdrop.com',
+      search: '/search/{}',
+      color: 'linear-gradient(to bottom right, #000, #000 5%, #EFEFEF 5%, #EFEFEF 10%, #14B5AD 10%, #14B5AD 15%, #fff 15%)',
+      icon: 'massdrop',
       quickLaunch: true,
     },
     {
       category: 'Media',
       name: 'SoundCloud',
       key: 'sc',
+      longkey: 'soundcloud',
       url: 'https://soundcloud.com/discover',
       search: '/search?q={}',
       icon: 'soundcloud',
@@ -272,6 +311,7 @@ const CONFIG = {
       category: 'Media',
       name: 'Spotify',
       key: 's',
+      longkey: 'spotify',
       url: 'https://open.spotify.com',
       search: '/search/results/{}',
       icon: 'spotify',
@@ -282,6 +322,7 @@ const CONFIG = {
       category: 'Other',
       name: '7digital',
       key: '7',
+      longkey: '7digital',
       url: 'https://us.7digital.com',
       search: '/search?q={}',
       icon: '7digital',
@@ -292,6 +333,7 @@ const CONFIG = {
       category: 'Other',
       name: 'ThePirateBay',
       key: 'tb',
+      longkey: 'thepiratebay',
       url: 'https://thepiratebay.org',
       search: '/search/{}',
       icon: 'piratebay',
@@ -302,6 +344,7 @@ const CONFIG = {
       category: 'Other',
       name: 'YTS',
       key: 'yts',
+      longkey: 'yts',
       url: 'https://yts.am/browse-movies/all/1080p/all/7/latest',
       search: '/browse-movies/{}',
       icon: 'yts',
@@ -312,6 +355,7 @@ const CONFIG = {
       category: 'Other',
       name: 'Hulu',
       key: 'hu',
+      longkey: 'hulu',
       url: 'https://www.hulu.com',
       icon: 'hulu',
       color: 'linear-gradient(to bottom right, #333333, #333333 5%, #666666 5%, #666666 10%, #fff 10%, #fff 15%, #3DBB3D 15%)',
@@ -552,7 +596,7 @@ class Help {
     this._invertValue = this._reverseColors ? 1: 0;
 
     return this._commands
-      .map(({ category, name, key, url, icon }) => {
+      .map(({ category, name, key, longkey, url, icon }) => {
         if (category === currentCategory) {
           return `
             <li class="command">
@@ -599,7 +643,7 @@ class Influencer {
   }
 
   _getSearchPrefix(query) {
-    const { isSearch, key, split } = this._parseQuery(query);
+    const { isSearch, key, longkey, split } = this._parseQuery(query);
     return isSearch ? `${key}${split} ` : false;
   }
 }
@@ -892,9 +936,16 @@ class QueryParser {
       const splitSearch = trimmed.split(this._searchDelimiter);
       const splitPath = trimmed.split(this._pathDelimiter);
 
-      this._commands.some(({ category, key, name, search, url }) => {
+      this._commands.some(({ category, key, longkey, name, search, url }) => {
         if (query === key) {
           res.key = key;
+          res.isKey = true;
+          res.redirect = url;
+          return true;
+        }
+
+        else if (query === longkey) {
+          res.key = longkey;
           res.isKey = true;
           res.redirect = url;
           return true;
@@ -907,10 +958,24 @@ class QueryParser {
           res.query = QueryParser._shiftAndTrim(splitSearch, res.split);
           res.redirect = QueryParser._prepSearch(url, search, res.query);
           return true;
+        } else if (splitSearch[0] === longkey && search) {
+          res.key = longkey;
+          res.isSearch = true;
+          res.split = this._searchDelimiter;
+          res.query = QueryParser._shiftAndTrim(splitSearch, res.split);
+          res.redirect = QueryParser._prepSearch(url, search, res.query);
+          return true;
         }
 
         if (splitPath[0] === key) {
           res.key = key;
+          res.isPath = true;
+          res.split = this._pathDelimiter;
+          res.path = QueryParser._shiftAndTrim(splitPath, res.split);
+          res.redirect = QueryParser._prepPath(url, res.path);
+          return true;
+        } else if (splitPath[0] === longkey) {
+          res.key = longkey;
           res.isPath = true;
           res.split = this._pathDelimiter;
           res.path = QueryParser._shiftAndTrim(splitPath, res.split);
