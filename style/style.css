@@ -1,7 +1,7 @@
 :root {
   /* colors */
   --background: #0e0e0e;
-  --foreground: #F1F1F1;
+  --foreground: #f2f2f2;
 
   /* fonts */
   --font-family: Inconsolata, sans-serif;
@@ -146,6 +146,8 @@ a:focus {
   flex-direction: column;
   flex-wrap: wrap;
   overflow: hidden;
+  max-width: 80%;
+  margin: auto;
 }
 
 body.suggestions .search-suggestions {

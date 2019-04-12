@@ -1,6 +1,6 @@
 # CHP New Tab Page (Work In Progress)
 
-A modified version of [Özenç Bilgili's](https://github.com/Ozencb)'s "slightly modified version" of [Cade Scroggins](https://github.com/cadejscroggins)'s homepage [Tilde](https://github.com/cadejscroggins/tilde).
+A modified version of [Cade Scroggins](https://github.com/cadejscroggins)'s homepage [Tilde](https://github.com/cadejscroggins/tilde).
 Meant for use in setup as well as new Chrome Tabs with the addition of (https://chrome.google.com/webstore/detail/change-new-tab/mocklpfdimiadpbgamlgehpgpodggahe)
 
 ## Usage
